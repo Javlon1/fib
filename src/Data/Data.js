@@ -4,6 +4,7 @@ import slider3 from "../Assets/Img/slider1.png"
 import slider4 from "../Assets/Img/slider2.png"
 import slider5 from "../Assets/Img/slider1.png"
 import slider6 from "../Assets/Img/slider2.png"
+import pizza from "../Assets/Img/pizza.png"
 
 export const HeaderData = [
     {
@@ -93,29 +94,57 @@ export const Lang = [
     },
 ]
 
-export const sliderData = [ 
+export const sliderData = [
+    {
+        id: 1,
+        img: slider1,
+    },
+    {
+        id: 2,
+        img: slider2,
+    },
+    {
+        id: 3,
+        img: slider3,
+    },
+    {
+        id: 4,
+        img: slider4,
+    },
+    {
+        id: 5,
+        img: slider5,
+    },
+    {
+        id: 6,
+        img: slider6,
+    },
+]
+
+
+export const newsData = [
     {
         id:1,
-        img:slider1,
+        img: pizza,
+        name: "Карбонара",
+        price: 218
     },
     {
         id:2,
-        img:slider2,
+        img: pizza,
+        name: "Карбонара",
+        price: 218
     },
     {
         id:3,
-        img:slider3,
+        img: pizza,
+        name: "Карбонара",
+        price: 218
     },
     {
         id:4,
-        img:slider4,
-    },
-    {
-        id:5,
-        img:slider5,
-    },
-    {
-        id:6,
-        img:slider6,
-    },
+        img: pizza,
+        name: "Карбонара",
+        price: 218
+    }
 ]

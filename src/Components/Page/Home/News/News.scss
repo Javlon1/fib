@@ -1,0 +1,142 @@
+@import "../../../../Assets/Sass/Veriables.scss";
+
+.news {
+    .container {
+        &__title{
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 2rem;
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__item {
+                width: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                box-shadow: 0 0 4px $black;
+                padding: .5rem;
+                margin-top: .5rem;
+                border-radius: .8rem;
+
+                &__div {
+                    width: 60%;
+                    p{
+                        padding-top: .2rem;
+                        color: $yellow;
+                        font-size: 1rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .news {
+        .container {
+            &__list {
+                &__item {
+                    width: 200px;
+                    padding: .5rem;
+
+                    &__div {
+                        margin-left: .7rem;
+                        b{
+                            font-size: 1rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+} 
+
+@media only screen and (max-width: 991px) {
+    .news {
+        .container {
+            &__title{
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 0;
+                margin-bottom: 1rem;
+            }
+            &__list {
+                &__item {
+                    width: 150px;
+                    padding: .2rem;
+
+                    &__div {
+                        margin-left: .5rem;
+                        b{
+                            font-size: .6rem;
+                        }
+                        p{
+                            font-size: .6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+} 
+
+@media only screen and (max-width: 767px) {
+    .news {
+        .container {
+            &__list {
+                &__item {
+                    width: 22%;
+                    padding: .2rem;
+                    img{
+                        width: 35%;
+                    }
+
+                    &__div {
+                        margin-left: .1rem;
+                        b{
+                            font-size: 10px;
+                        }
+                        p{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+} 
+
+@media only screen and (max-width: 575px) {
+    .news {
+        .container {
+            &__list {
+                &__item {
+                    width: 22%;
+                    padding: .2rem;
+                    img{
+                        width: 30%;
+                    }
+
+                    &__div {
+                        margin-left: 0;
+                        b{
+                            font-size: 40%;
+                        }
+                        p{
+                            font-size: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+} 
