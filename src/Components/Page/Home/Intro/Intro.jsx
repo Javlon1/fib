@@ -18,10 +18,10 @@ export default function Intro() {
                     modules={[Autoplay]}
                     spaceBetween={10}
                     slidesPerView={2}
-                    // autoplay={{
-                    //   delay: 2500,
-                    //   disableOnInteraction: false,
-                    // }}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    }}
                 >
                     {
                         sliderData?.map((e) => (
