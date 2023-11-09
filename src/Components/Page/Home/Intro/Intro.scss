@@ -1,14 +1,15 @@
 @import '../../../../Assets/Sass/Veriables.scss';
 
 .intro {
-    background-color: $black;
-    padding-bottom: 9rem;
-    height: 100vh;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        background-color: red;
-        
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .container{
+        &__swiper{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+        }
     }
 }

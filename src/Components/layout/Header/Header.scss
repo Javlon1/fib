@@ -4,6 +4,7 @@
     width: 100%;
     background-color: $white;
     position: fixed;
+    z-index: 9999;
     box-shadow: 0 0 3px $black;
     
     .container {
@@ -253,7 +254,7 @@
                     text-align: center;
                     left: -5%;
                     top: 90px;
-                    z-index: 999;
+                    z-index: 9999;
                     transform: translateX(155%);
                     transition: $transition;
                     background-color: $yellow;
