@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.scss'
 import { HeaderData } from '../../../Data/Data'
 import { Context } from '../../../Context/Context';
-// import logo from "../../../Assets/Img/logo."
+import logo from "../../../Assets/Img/logo.png"
 
 export default function Header() {
 
@@ -34,7 +34,7 @@ export default function Header() {
                             onClick={() => {
                                 sessionStorage.setItem('menu', 1)
                             }}>
-                            <img className='logo' src='' alt="logo" />
+                            <img className='logo' src={logo} alt="logo" />
                         </Link>
                         <ul className='list'>
                             <li className='list__top'>
@@ -86,7 +86,6 @@ export default function Header() {
                         <span>1</span>
                     </div>
                 </nav>
-
             </div>
         </header>
     )

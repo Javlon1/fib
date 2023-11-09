@@ -37,13 +37,13 @@
             a {
                 display: inline-block;
                 color: $white;
-                background-color: red;
+                background-color: $black;
                 padding: 20px 45px;
                 font-size: 18px;
                 transition: $transition;
 
                 &:hover {
-                    background-color: $black;
+                    background-color: $yellow;
                 }
             }
         }

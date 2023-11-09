@@ -107,7 +107,7 @@ p{
   }
 
   &:hover {
-    color: red;
+    color: $yellow;
     box-shadow: 0px 0px 20px 0px #dddddd75;
   }
 
@@ -117,7 +117,7 @@ p{
     &__path {
       box-sizing: border-box;
       fill: none;
-      stroke: red;
+      stroke: $yellow;
       stroke-width: 4px;
       transition: .2s;
     }

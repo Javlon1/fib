@@ -8,7 +8,7 @@ export const HeaderData = [
     },
     {
         id: 2,
-        link: '/',
+        link: '/a',
         nav_uz: 'Home',
         nav_ru: 'домой',
         nav_en: 'Home'

@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Footer from './Components/layout/Footer/Footer';
+// import Footer from './Components/layout/Footer/Footer';
 import Header from './Components/layout/Header/Header';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
@@ -48,14 +48,28 @@ function App() {
   // };
   //
 
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const getCounteries = async () => {
+      await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+      setLoading(false)
+    }
+    getCounteries()
+  }, [])
+
+  if (loading) {
+    return <Loader />
+  }
+
   return (
     <div className="App">
       <Header />
-      
+
       <Routes>
 
-        {/* <Route path='*' element={<NotFound />} /> */}
-        {/* <Route path='/' element={<Home />} /> */}
+        <Route path='*' element={<NotFound />} />
+        <Route path='/' element={<Home />} />
 
       </Routes>
 
