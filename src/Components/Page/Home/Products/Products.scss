@@ -8,6 +8,7 @@
     flex-wrap: wrap;
 
     &__item {
+        background-color: $white;
         display: flex;
         align-items: center;
         flex-direction: column;
