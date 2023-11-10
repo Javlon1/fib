@@ -1,0 +1,28 @@
+@import '../../../../../Assets/Sass/Veriables.scss';
+
+.item {
+    padding: 100px 0;
+
+    .container {
+        &__title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: $yellow;
+        }
+    }
+}
+
+.el {
+    color: $yellow;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $yellow;
+        color: $white;
+    }
+}
+
+.act {
+    background-color: $yellow !important;
+    color: $white;
+}
