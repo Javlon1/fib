@@ -253,11 +253,12 @@
                     position: fixed;
                     text-align: center;
                     left: -5%;
-                    top: 90px;
+                    top: 91px;
                     z-index: 9999;
                     transform: translateX(155%);
                     transition: $transition;
-                    background-color: $yellow;
+                    background-color: $white;
+                    box-shadow: 0 1px 4px $black;
                     padding: 1rem;
 
                     &__item {
@@ -267,7 +268,7 @@
                         justify-content: center;
                         width: 80%;
                         padding: .5rem 0;
-                        color: $white;
+                        color: $black;
                         font-size: 1rem;
                         margin-bottom: 12px;
 
@@ -278,12 +279,12 @@
                         &:hover,
                         &:focus,
                         &.active {
-                            color: $black;
+                            color: $yellow;
     
                             &:before {
                                 width: 90% !important;
                                 opacity: 1;
-                                background-color: $black;
+                                background-color: $yellow;
                             }
                         }
 
