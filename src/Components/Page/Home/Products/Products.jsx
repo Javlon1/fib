@@ -9,7 +9,7 @@ export default function Products({ projects, loading }) {
     if (loading) {
         return <Loader />
     }
-
+ 
     return (
         <section className='products'>
             {
