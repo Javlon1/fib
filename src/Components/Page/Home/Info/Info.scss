@@ -1,0 +1,93 @@
+@import "../../../../Assets/Sass/Veriables.scss";
+
+.info {
+    padding: 6rem 0;
+    background-color: $bc-info;
+
+    .container {
+        &__title {
+            text-align: center;
+            color: $yellow;
+            font-size: 1.8rem;
+            font-weight: 800;
+        }
+
+        &__list {
+            padding-top: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            &__item {
+                background-color: $white;
+                margin: 1rem 0;
+                width: 250px;
+                border-radius: .5rem;
+                padding: .5rem;
+                padding-top: 2rem;
+                text-align: center;
+                position: relative;
+
+                .img {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    background-color: $white;
+                    border-radius: 50%;
+                    top: -1.5rem;
+                    left: 0px;
+                    right: 0px;
+                    margin: 0 auto;
+
+                    img {
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                    }
+                }
+
+                p {
+                    padding: 1rem 0;
+                    font-size: .9rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__map{
+            border-radius: .5rem;
+            height: 350px;
+            margin: 2rem auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .info {
+        .container {
+            &__list {
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    .info {
+        padding: 2rem 0;
+        .container {
+            &__list {
+                padding-top: 2rem;
+
+                &__item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

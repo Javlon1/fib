@@ -147,6 +147,12 @@ export const newsData = [
         img: pizza,
         name: "Карбонара",
         price: 218
+    },
+    {
+        id: 5,
+        img: pizza,
+        name: "Карбонара",
+        price: 218
     }
 ]
 
@@ -292,3 +298,26 @@ export const ProductData = [
         price: 600
     },
 ] 
+
+export const InfoData = [
+    {
+        id:1,
+        img:pizza,
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    },
+    {
+        id:2,
+        img:pizza,
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    },
+    {
+        id:3,
+        img:pizza,
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    },
+    {
+        id:4,
+        img:pizza,
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    },
+]
