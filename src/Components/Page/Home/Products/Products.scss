@@ -91,6 +91,7 @@
                         color: $black;
                         font-size: 1rem;
                     }
+
                     button {
                         font-size: .6rem;
                     }
@@ -115,11 +116,11 @@
 
             &__list {
                 &__title {
-                    font-size: 10px;
+                    font-size: 8px;
                 }
 
                 &__text {
-                    margin: .5rem 0;
+                    margin: 2px 0;
                     font-size: 8px;
                     line-height: 12px;
                 }
@@ -127,13 +128,14 @@
                 &__item {
                     p {
                         color: $black;
-                        font-size: 10px;
-                        font-weight: 400;
+                        font-size: 9px;
+                        font-weight: 500;
                     }
+
                     button {
                         padding: .4rem .8rem;
-                        font-size: 10px;
-                        font-weight: 400;
+                        font-size: 9px;
+                        font-weight: 500;
                     }
                 }
             }
@@ -166,6 +168,7 @@
                         font-size: 12px;
                         font-weight: 500;
                     }
+
                     button {
                         padding: .4rem .8rem;
                         font-size: 12px;
