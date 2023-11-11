@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
 
             <div className='footer__botomm'>
-                <p>YaBao Все праав защищены © 2021</p>
+                <p>Jonny Все праав защищены © 2021</p>
             </div>
         </footer>
     )
