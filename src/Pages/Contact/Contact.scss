@@ -9,12 +9,12 @@
 
     .container {
         &__map {
+            margin-top: 1.5rem;
             border-radius: .5rem;
             height: 350px;
         }
 
         &__item {
-            margin-top: 1.5rem;
 
             &__number {
                 font-size: 2rem;
