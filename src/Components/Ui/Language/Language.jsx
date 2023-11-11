@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { Context } from '../../../../Context/Context'
-import { Lang } from '../../../../Data/Data'
 import './Language.scss'
+import { Lang } from '../../../Data/Data';
+import { Context } from '../../../Context/Context';
 
 
 const Language = () => {
@@ -15,7 +15,7 @@ const Language = () => {
     React.useEffect(() => {
         window.localStorage.setItem('lan', lan)
     }, [lan])
-
+ 
     return (
         <section className='language'>
             <select className='select' defaultValue={lan} onChange={handleChange} name="" id="">

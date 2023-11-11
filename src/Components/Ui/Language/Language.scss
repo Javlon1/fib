@@ -1,19 +1,26 @@
-@import '../../../../Assets/Sass/Veriables.scss';
+@import '../../../Assets/Sass/Veriables.scss';
 
 .language {
     width: 65px;
     position: relative;
-    .select{
+
+    .select {
         width: 65px;
         appearance: none;
         padding: .2rem 0 .3rem .5rem;
         border: transparent;
         cursor: pointer;
         color: $black;
-        background-color: #eee;
+        background-color: $yellow;
         border-radius: .5rem;
+
+        option {
+            background-color: $white;
+            color: $yellow;
+        }
     }
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         top: 50%;

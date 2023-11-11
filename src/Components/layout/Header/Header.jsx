@@ -52,7 +52,6 @@ export default function Header() {
                     <div className='container__top__info'>
                         <Link
                             to={`tel:${905251243}`}
-                            target="_blank"
                             className='container__top__info__number'
                         >
                             905251243

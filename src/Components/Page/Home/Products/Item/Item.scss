@@ -3,8 +3,8 @@
 .item {
     background-image: url("../../../../../Assets/Img/bc-product.png"), url("../../../../../Assets/Img/bc-product1.png");
     background-repeat: no-repeat;
-    background-position: left top, right bottom;
-    padding: 3rem 0;
+    background-position: left 100px, right bottom;
+    padding: 2rem 0;
 
     .container {
         &__title {

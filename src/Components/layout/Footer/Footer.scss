@@ -1,0 +1,86 @@
+@import "../../../Assets/Sass/Veriables.scss";
+
+.footer {
+    padding: 3rem 0;
+    background-image: url("../../../Assets/Img/bc-footer.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__top {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            &__div {
+                width: 250px;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__number {
+                    font-size: 1.5rem;
+                    color: $yellow;
+                    font-weight: 700;
+                }
+            }
+
+            &__title {
+                font-size: 14px;
+                margin-top: 1rem;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            &__list {
+                width: 450px;
+                margin-top: .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+                &__item {
+                    background-color: $white;
+                    margin-top: 1rem;
+                    margin-right: 5px;
+                    border: 1px solid $gray;
+                    border-radius: 1rem;
+                    padding: 2px 1.3rem;
+
+                    i {
+                        color: $black;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__botomm {
+        padding-top: 2rem;
+        text-align: center;
+        p{
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 460px) {
+    .footer {
+        .container {
+            &__top {
+                &__list {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

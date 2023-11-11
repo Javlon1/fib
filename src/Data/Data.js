@@ -9,7 +9,7 @@ import pizza1 from "../Assets/Img/pizza1.png"
 
 export const HeaderData = [
     {
-        id: 1, 
+        id: 1,
         link: '/',
         nav_uz: 'Home',
         nav_ru: 'домой',
@@ -92,6 +92,34 @@ export const Lang = [
     {
         id: 3,
         lang: 'en'
+    },
+]
+
+export const FooterData = [
+    {
+        id: 1,
+        link:"/",
+        icon:"bi bi-telegram",
+    },
+    {
+        id: 2,
+        link:"/",
+        icon:"bi bi-telegram",
+    },
+    {
+        id: 3,
+        link:"/",
+        icon:"bi bi-telegram",
+    },
+    {
+        id: 4,
+        link:"/",
+        icon:"bi bi-telegram",
+    },
+    {
+        id: 5,
+        link:"/",
+        icon:"bi bi-telegram",
     },
 ]
 
@@ -297,27 +325,29 @@ export const ProductData = [
         text: "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
         price: 600
     },
-] 
+]
 
 export const InfoData = [
     {
-        id:1,
-        img:pizza,
-        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        id: 1,
+        img: pizza,
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-        id:2,
-        img:pizza,
-        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        id: 2,
+        img: pizza,
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-        id:3,
-        img:pizza,
-        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        id: 3,
+        img: pizza,
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
     {
-        id:4,
-        img:pizza,
-        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        id: 4,
+        img: pizza,
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
 ]
+
+
