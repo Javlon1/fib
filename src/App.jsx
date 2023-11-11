@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-// import Footer from './Components/layout/Footer/Footer';
+import Footer from './Components/layout/Footer/Footer';
 import Header from './Components/layout/Header/Header';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
@@ -73,7 +73,7 @@ function App() {
 
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
         <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>
           <path className='scroll-up__svg__path'

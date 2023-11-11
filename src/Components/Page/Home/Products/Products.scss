@@ -164,16 +164,15 @@
             }
 
             &__list {
-
                 &__item {
                     p {
                         color: $black;
                         font-size: 12px;
-                        font-weight: 500;
+                        font-weight: 600;
                     }
 
                     button {
-                        padding: .4rem .8rem;
+                        padding:    .5rem 1rem;
                         font-size: 12px;
                         font-weight: 500;
                     }
