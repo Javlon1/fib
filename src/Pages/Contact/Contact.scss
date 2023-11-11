@@ -1,0 +1,46 @@
+@import "../../Assets/Sass/Veriables.scss";
+
+.contact {
+    background-image: url("../../Assets/Img/bc-contact.png");
+    background-repeat: no-repeat;
+    background-position: right 10px;
+    margin-top: 170px;
+    padding: 2rem 0;
+
+    .container {
+        &__map {
+            border-radius: .5rem;
+            height: 350px;
+        }
+
+        &__item {
+            margin-top: 1.5rem;
+
+            &__number {
+                font-size: 2rem;
+                color: $yellow;
+                font-weight: 700;
+            }
+            &__addr{
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 3rem;
+            }
+            &__clock{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .contact {
+        margin-top: 90px;
+
+        .container {
+            &__item {
+                text-align: center;
+            }
+        }
+    }
+}

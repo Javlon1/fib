@@ -6,6 +6,7 @@ import Header from './Components/layout/Header/Header';
 import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Home from './Pages/Home/Home';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
 
         <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<Contact />} />
 
       </Routes>
 
