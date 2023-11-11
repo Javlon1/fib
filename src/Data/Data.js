@@ -9,7 +9,7 @@ import pizza1 from "../Assets/Img/pizza1.png"
 
 export const HeaderData = [
     {
-        id: 1,
+        id: 1, 
         link: '/',
         nav_uz: 'Home',
         nav_ru: 'домой',
