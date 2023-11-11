@@ -2,13 +2,13 @@ import React from 'react';
 import "./Footer.scss";
 import logo from "../../../Assets/Img/logo.png";
 import { Link } from 'react-router-dom';
-import { FooterData, HeaderData } from '../../../Data/Data';
+import { FooterData } from '../../../Data/Data';
 import { Context } from '../../../Context/Context';
 import Language from '../../Ui/Language/Language';
 
 export default function Footer() {
 
-    const { lan, menu, setMenu } = React.useContext(Context)
+    const { lan, setMenu } = React.useContext(Context)
 
     return (
         <footer className='footer'>
@@ -16,6 +16,7 @@ export default function Footer() {
                 <div className="container__top">
                     <Link to='/'
                         onClick={() => {
+                            setMenu(1)
                             sessionStorage.setItem('menu', 1)
                         }}>
                         <img className='logo' src={logo} alt="logo" />

@@ -32,6 +32,7 @@ export default function Header() {
                     <div className="container__top__item">
                         <Link to='/'
                             onClick={() => {
+                                setMenu(1)
                                 sessionStorage.setItem('menu', 1)
                             }}>
                             <img className='logo' src={logo} alt="logo" />
