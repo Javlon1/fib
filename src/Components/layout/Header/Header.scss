@@ -6,7 +6,7 @@
     position: fixed;
     z-index: 9999;
     box-shadow: 0 0 3px $black;
-    
+
     .container {
         &__top {
             display: flex;
@@ -97,6 +97,7 @@
             justify-content: space-between;
             width: 100%;
             height: 90px;
+            position: relative;
 
             &__logo {
                 width: 107px;
@@ -166,6 +167,70 @@
                     font-weight: 600;
                     padding: 0 .5rem;
                 }
+
+            }
+
+            .dropdown {
+                display: none;
+                width: 350px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                position: absolute;
+                height: 0;
+                top: 90px;
+                left: 59rem;
+                transition: 1s all ease;
+                background-color: $white;
+                box-shadow: 0px 0px 6px $yellow;
+
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    height: 70%;
+                    box-shadow: 0px 0px 6px $yellow;
+
+                    &__img {
+                        width: 70px;
+                        height: 70px;
+                        background-color: $yellow;
+                        border-radius: 50%;
+                    }
+
+                    &__list {
+                        &__title {
+                            display: flex;
+                            align-items: center;
+
+                            p {
+                                font-size: .8rem;
+                                width: 150px;
+                                font-weight: 700;
+                            }
+
+                            i {
+                                font-size: 1rem;
+                                font-weight: 700;
+                            }
+                        }
+
+                        &__cuant {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            ul {
+                                width: 95px;
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0 1rem;
+                                border-radius: .5rem;                                background-color: #F3F3F7;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -174,6 +239,7 @@
 @media only screen and (max-width: 991px) {
     .header {
         height: 90px;
+
         .container {
             &__top {
                 &__item {
@@ -194,13 +260,13 @@
                         border-radius: .5rem;
                         background-color: $yellow;
                         cursor: pointer;
-        
+
                         p {
                             font-style: 1rem;
                             font-weight: 600;
                             padding: 0 .5rem;
                         }
-        
+
                         span {
                             border-left: 2px solid $black;
                             font-style: 1rem;
@@ -279,7 +345,7 @@
                         &:focus,
                         &.active {
                             color: $yellow;
-    
+
                             &:before {
                                 width: 90% !important;
                                 opacity: 1;
@@ -289,7 +355,8 @@
 
                     }
                 }
-                &__btn{
+
+                &__btn {
                     display: none;
                 }
             }
@@ -303,11 +370,14 @@
         .container {
             &__top {
                 justify-content: space-between;
+
                 &__info {
                     width: 40px;
-                    &__number{
+
+                    &__number {
                         display: none;
                     }
+
                     &__btn {
                         display: none;
                     }
@@ -333,4 +403,12 @@
     &:after {
         transform: rotate(-45deg) translate(35px, 35px) !important;
     }
+}
+
+.open__menu {
+    display: flex !important;
+    height: 500px !important;
+    box-shadow: 0px 0px 8px $yellow;
+    right: -200px !important;
+    transition: 1s all ease !important;
 }

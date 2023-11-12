@@ -10,6 +10,7 @@ export default function Header() {
     const { lan, menu, setMenu } = React.useContext(Context)
     const [scrol, setScrol] = React.useState(false)
     const [nav, setNav] = React.useState(false)
+    const [drop, setDrop] = React.useState(false)
     const offSet = 80;
 
     const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -81,9 +82,42 @@ export default function Header() {
                             ))
                         }
                     </ul>
-                    <div className='container__nav__btn'>
+                    <div className='container__nav__btn'
+
+                        onClick={() => {
+                            setDrop(!drop)
+                        }}
+                    >
                         <p>корзинка</p>
                         <span>1</span>
+                    </div>
+                    <div className={drop ? "dropdown open__menu" : "dropdown"}>
+                        <div className="dropdown__item">
+                            <img className='dropdown__item__img' src="" alt="" />
+                            <div className='dropdown__item__list'>
+                                <span className='dropdown__item__list__title'>
+                                    <p>С креветками и трюфелями</p>
+                                    <i className="bi bi-x-lg"></i>
+                                </span>
+                                <span className='dropdown__item__list__cuant'>
+                                    <ul>
+                                        <li>
+                                            <i className="bi bi-dash"></i>
+                                        </li>
+                                        <li>1</li>
+                                        <li>
+                                            <i className="bi bi-plus"></i>
+                                        </li>
+                                    </ul>
+                                    <p className="price">120 $</p>
+                                </span>
+                            </div>
+                        </div>
+                        <span className='dropdown__totalPrice'>
+                            <p>Сумма заказа</p>
+                            <b>120 $</b>
+                        </span>
+                        <button className='dropdown__btn'>Оформить заказ</button>
                     </div>
                 </nav>
             </div>
