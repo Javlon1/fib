@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
 
             <div className='footer__botomm'>
-                <p>Jonny Все праав защищены © 2021</p>
+                <p>Jonny Все праав защищены © 2023</p>
             </div>
         </footer>
     )
