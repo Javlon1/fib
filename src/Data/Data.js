@@ -349,5 +349,3 @@ export const InfoData = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     },
 ]
-
-

@@ -11,6 +11,7 @@ export default function Header() {
     const [scrol, setScrol] = React.useState(false)
     const [nav, setNav] = React.useState(false)
     const [drop, setDrop] = React.useState(false)
+    const [dro, setDro] = React.useState(false)
     const offSet = 80;
 
     const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -58,11 +59,54 @@ export default function Header() {
                         >
                             905251243
                         </Link>
-                        <div className='container__top__info__btn'>
+                        <div className='container__top__info__btn'
+                            onClick={() => {
+                                setDro(!dro)
+                                setNav(false)
+                            }}
+                        >
                             <p>корзинка</p>
                             <span>1</span>
                         </div>
-                        <div onClick={() => setNav(!nav)} className={nav ? 'container__top__info__btnHam active-Ham' : 'container__top__info__btnHam'}></div>
+                        <div className={dro ? "dropdown open__menu" : "dropdown"}>
+                            <ul className='list'>
+                                {
+                                    <li className="list__item">
+                                        <img className='list__item__img' src="" alt="" />
+                                        <div className='list__item__list'>
+                                            <span className='list__item__list__title'>
+                                                <p>С креветками и трюфелями</p>
+                                                <b>
+                                                    <i className="bi bi-x-lg"></i>
+                                                </b>
+                                            </span>
+                                            <span className='list__item__list__cuant'>
+                                                <ul>
+                                                    <li>
+                                                        <i className="bi bi-dash"></i>
+                                                    </li>
+                                                    <b>1</b>
+                                                    <li>
+                                                        <i className="bi bi-plus"></i>
+                                                    </li>
+                                                </ul>
+                                                <p className="price">120 $</p>
+                                            </span>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                            <span className='dropdown__totalPrice'>
+                                <p>Сумма заказа</p>
+                                <b>120 $</b>
+                            </span>
+                            <button className='dropdown__btn'>Оформить заказ</button>
+                        </div>
+                        <div className={nav ? 'container__top__info__btnHam active-Ham' : 'container__top__info__btnHam'}
+                            onClick={() => {
+                                setNav(!nav)
+                                setDrop(false)
+                            }}></div>
                     </div>
                 </div>
 
@@ -82,10 +126,10 @@ export default function Header() {
                             ))
                         }
                     </ul>
-                    <div className='container__nav__btn'
-
+                    <div className={nav ? 'container__nav__btn btnAct' : 'container__nav__btn'}
                         onClick={() => {
                             setDrop(!drop)
+                            setNav(false)
                         }}
                     >
                         <p>корзинка</p>

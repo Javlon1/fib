@@ -395,10 +395,10 @@
                     width: 70%;
                     display: block;
                     position: fixed;
+                    z-index: 9999;
                     text-align: center;
                     left: -5%;
                     top: 91px;
-                    z-index: 9999;
                     transform: translateX(155%);
                     transition: $transition;
                     background-color: $white;
@@ -415,23 +415,25 @@
                         color: $black;
                         font-size: 1rem;
                         margin-bottom: 12px;
-
                         &:before {
                             bottom: .1rem;
                         }
-
+                        
                         &:hover,
                         &:focus,
                         &.active {
                             color: $yellow;
-
+                            
                             &:before {
                                 width: 90% !important;
                                 opacity: 1;
                                 background-color: $yellow;
                             }
                         }
-
+                        
+                    }
+                    &:nth-child(1){
+                        padding-top: 75px;
                     }
                 }
 
@@ -439,10 +441,13 @@
                     display: none;
                 }
             }
+
+            .dropdown {
+                top: 90px;
+            }
         }
     }
 }
-
 
 @media only screen and (max-width: 767px) {
     .header {
@@ -462,8 +467,23 @@
                     }
                 }
             }
+            &__nav{
+                &__btn{
+                    display: flex;
+                    transform: translateX(305%);
+                    transition: $transition;
+                    position: fixed;
+                    z-index: 9999;
+                    right: 34%;
+                }
+            }
         }
     }
+}
+
+.btnAct {
+    transform: translateX(50%) !important;
+    transition: all .5s ease-in-out !important;
 }
 
 .active-nav {
