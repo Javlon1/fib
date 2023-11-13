@@ -8,6 +8,8 @@
     box-shadow: 0 0 3px $black;
 
     .container {
+        position: relative;
+
         &__top {
             display: flex;
             align-items: center;
@@ -97,7 +99,6 @@
             justify-content: space-between;
             width: 100%;
             height: 90px;
-            position: relative;
 
             &__logo {
                 width: 107px;
@@ -170,25 +171,45 @@
 
             }
 
-            .dropdown {
-                display: none;
-                width: 350px;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                position: absolute;
-                height: 0;
-                top: 90px;
-                left: 59rem;
-                transition: 1s all ease;
-                background-color: $white;
-                box-shadow: 0px 0px 6px $yellow;
+        }
+
+        .dropdown {
+            display: flex;
+            width: 320px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            height: 0;
+            top: 170px;
+            right: 0rem;
+            transition: .9s all ease;
+            background-color: $white;
+            box-shadow: 0px 0px 6px $yellow;
+            border-radius: .5rem;
+            padding: 1rem 0;
+            opacity: 0;
+
+            .list {
+                width: 90%;
+                height: 70%;
+                opacity: 0;
 
                 &__item {
                     display: flex;
                     align-items: center;
-                    height: 70%;
-                    box-shadow: 0px 0px 6px $yellow;
+                    justify-content: center;
+                    position: relative;
+                    padding: 1rem .5rem;
+
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        width: 80%;
+                        height: 2px;
+                        bottom: 0rem;
+                        background-color: $gray;
+                    }
 
                     &__img {
                         width: 70px;
@@ -198,6 +219,8 @@
                     }
 
                     &__list {
+                        margin-left: 1rem;
+
                         &__title {
                             display: flex;
                             align-items: center;
@@ -208,9 +231,21 @@
                                 font-weight: 700;
                             }
 
-                            i {
-                                font-size: 1rem;
-                                font-weight: 700;
+                            b {
+                                border: 1px solid $gray;
+                                border-radius: 50%;
+                                width: 26px;
+                                height: 26px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+
+                                i {
+                                    font-size: 1rem;
+                                    font-weight: 700;
+                                    height: 22px;
+                                }
                             }
                         }
 
@@ -218,6 +253,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
+                            margin-top: .5rem;
 
                             ul {
                                 width: 95px;
@@ -226,10 +262,53 @@
                                 align-items: center;
                                 justify-content: space-between;
                                 padding: 0 1rem;
-                                border-radius: .5rem;                                background-color: #F3F3F7;
+                                border-radius: .5rem;
+
+                                li {
+                                    cursor: pointer;
+                                }
+
+                                background-color: #F3F3F7;
+                            }
+
+                            .price {
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                color: $yellow;
                             }
                         }
                     }
+                }
+            }
+
+            &__totalPrice {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 75%;
+
+                p {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+
+                b {
+                    font-size: 1.5rem;
+                    color: $yellow;
+                }
+            }
+
+            &__btn {
+                border: none;
+                background-color: $yellow;
+                padding: .5rem 1rem;
+                font-weight: 600;
+                border-radius: .5rem;
+                color: $white;
+                transition: $transition;
+
+                &:hover {
+                    color: $black;
                 }
             }
         }
@@ -406,9 +485,11 @@
 }
 
 .open__menu {
-    display: flex !important;
-    height: 500px !important;
+    height: 450px !important;
     box-shadow: 0px 0px 8px $yellow;
-    right: -200px !important;
-    transition: 1s all ease !important;
+    opacity: 1 !important;
+
+    .list {
+        opacity: 1 !important;
+    }
 }

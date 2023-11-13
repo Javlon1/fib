@@ -15,6 +15,60 @@
     }
 }
 
+.modal {
+    top: 170px;
+
+    .title {
+        h4 {
+            color: $black;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        b {
+            color: $gray;
+            font-weight: 600;
+        }
+
+        p {
+            color: $gray;
+            font-weight: 400;
+            font-size: .8rem;
+        }
+    }
+
+    .btnM {
+        transition: .5s all ease;
+        background-color: $yellow;
+    }
+
+    .product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__img{
+            background-color: red;
+            width: 48%;
+        }
+        &__item{
+            background-color: red;
+            width: 48%;
+        }
+    }
+
+    .btn {
+        background-color: $yellow;
+        font-weight: 600;
+        color: $white;
+        transition: $transition;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}
+
 .el {
     color: $yellow;
     font-weight: 600;

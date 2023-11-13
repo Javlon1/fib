@@ -25,7 +25,7 @@ export default function Products({ projects, loading }) {
                             </p>
                             <span className='products__item__list__item'>
                                 <p>от {e.price} $</p>
-                                <button>В корзину</button>
+                                <button data-bs-toggle="modal" data-bs-target="#exampleModal">В корзину</button>
                             </span>
                         </div>
                     </div>

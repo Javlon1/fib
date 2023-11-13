@@ -92,27 +92,33 @@ export default function Header() {
                         <span>1</span>
                     </div>
                     <div className={drop ? "dropdown open__menu" : "dropdown"}>
-                        <div className="dropdown__item">
-                            <img className='dropdown__item__img' src="" alt="" />
-                            <div className='dropdown__item__list'>
-                                <span className='dropdown__item__list__title'>
-                                    <p>С креветками и трюфелями</p>
-                                    <i className="bi bi-x-lg"></i>
-                                </span>
-                                <span className='dropdown__item__list__cuant'>
-                                    <ul>
-                                        <li>
-                                            <i className="bi bi-dash"></i>
-                                        </li>
-                                        <li>1</li>
-                                        <li>
-                                            <i className="bi bi-plus"></i>
-                                        </li>
-                                    </ul>
-                                    <p className="price">120 $</p>
-                                </span>
-                            </div>
-                        </div>
+                        <ul className='list'>
+                            {
+                                <li className="list__item">
+                                    <img className='list__item__img' src="" alt="" />
+                                    <div className='list__item__list'>
+                                        <span className='list__item__list__title'>
+                                            <p>С креветками и трюфелями</p>
+                                            <b>
+                                                <i className="bi bi-x-lg"></i>
+                                            </b>
+                                        </span>
+                                        <span className='list__item__list__cuant'>
+                                            <ul>
+                                                <li>
+                                                    <i className="bi bi-dash"></i>
+                                                </li>
+                                                <b>1</b>
+                                                <li>
+                                                    <i className="bi bi-plus"></i>
+                                                </li>
+                                            </ul>
+                                            <p className="price">120 $</p>
+                                        </span>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
                         <span className='dropdown__totalPrice'>
                             <p>Сумма заказа</p>
                             <b>120 $</b>

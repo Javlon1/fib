@@ -49,6 +49,35 @@ export default function Item() {
                     Паста
                 </h2>
 
+                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <div className='title'>
+                                    <h4>Modal title</h4>
+                                    <b>hfuehuf hefueh eijfie efuuhfeu</b>
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                </div>
+                                <button className="btn-close btnM" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div className="modal-body">
+                                <div className="product">
+                                    <div className="product__img">
+                                        <img src="" alt="" />
+                                        ss
+                                    </div>
+                                    <div className="product__item">
+                                        hh
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="modal-footer">
+                                <button className='btn'>добавить в карзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <Products projects={currentCountry} loading={loading} />
 
                 <ReactPaginate
