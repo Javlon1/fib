@@ -1,19 +1,17 @@
 import * as React from 'react'
 import ReactPaginate from 'react-paginate'
+import { Context } from '../../../../../Context/Context'
 import { ProductData } from '../../../../../Data/Data'
 import Products from '../Products'
 import './Item.scss'
-// import { Context } from '../../../../../Context/Context'
-
+import pizza from "../../../../../Assets/Img/pizza1.png"
 
 export default function Item() {
-
-    // const { lan } = React.useContext(Context)
+    const { openModel, setOpenModel } = React.useContext(Context)
     const [projects, setProjects] = React.useState([])
     const [currentPage, setCurrentPage] = React.useState(1)
     const [countriesPerPage] = React.useState(8)
     const [loading, setLoading] = React.useState(true)
-
 
     React.useEffect(() => {
         const getCounteries = async () => {
@@ -49,31 +47,52 @@ export default function Item() {
                     Паста
                 </h2>
 
-                <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div className="modal-dialog">
-                        <div className="modal-content">
-                            <div className="modal-header">
-                                <div className='title'>
-                                    <h4>Modal title</h4>
-                                    <b>hfuehuf hefueh eijfie efuuhfeu</b>
-                                    <p>Lorem ipsum dolor sit amet consectetur</p>
-                                </div>
-                                <button type="button" className="btn-close btnM" data-bs-dismiss="modal" ></button>
+                <div className={openModel ? "myModel modalAtc" : "myModel"}>
+                    <div className='myModel__content'>
+                        <div className="myModel__content__left">
+                            <img style={{ width: 250, height: 250 }} src={pizza} alt={pizza} />
+                            <button onClick={() => setOpenModel(false)}>
+                                <i className="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                        <div className="myModel__content__right">
+                            <div className='myModel__content__right__title'>
+                                <span>
+                                    <h4>С креветками и трюфелями</h4>
+                                    <h6>25 см, традиционное тесто, 360 г</h6>
+                                    <p>Моцарелла, соус альфредо</p>
+                                </span>
+                                <button onClick={() => setOpenModel(false)}>
+                                    <i className="bi bi-x-lg"></i>
+                                </button>
                             </div>
-                            <div className="modal-body">
-                                <div className="product">
-                                    <div className="product__img">
-                                        <img src="" alt="" />
-                                        p
-                                    </div>
-                                    <div className="product__item">
-                                        hh
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="modal-footer">
-                                <button className='btn'>добавить в карзину</button>
-                            </div>
+                            <ul className='myModel__content__right__size'>
+                                <li>
+                                    <p>Маленькая</p>
+                                </li>
+                                <li>
+                                    <p>Маленькая</p>
+                                </li>
+                                <li>
+                                    <p>Маленькая</p>
+                                </li>
+                            </ul>
+                            <ul className='myModel__content__right__sizeq'>
+                                <li>
+                                    <p>Традиционное</p>
+                                </li>
+                                <li>
+                                    <p>Традиционное</p>
+                                </li>
+                            </ul>
+                            <ul className='myModel__content__right__im'>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                            </ul>
+                            <button className='myModel__content__right__btn'>Добавить в корзину 1 048 $</button>
                         </div>
                     </div>
                 </div>

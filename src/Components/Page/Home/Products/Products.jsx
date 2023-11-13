@@ -1,15 +1,16 @@
 import * as React from 'react'
+import { Context } from '../../../../Context/Context'
 import Loader from '../../../Ui/Loader/Loader'
 import './Products.scss'
 
 
 export default function Products({ projects, loading }) {
-
+    const { setOpenModel } = React.useContext(Context)
 
     if (loading) {
         return <Loader />
     }
- 
+
     return (
         <section className='products'>
             {
@@ -25,7 +26,7 @@ export default function Products({ projects, loading }) {
                             </p>
                             <span className='products__item__list__item'>
                                 <p>от {e.price} $</p>
-                                <button data-bs-toggle="modal" data-bs-target="#exampleModal">В корзину</button>
+                                <button onClick={()=>setOpenModel(true)}>В корзину</button>
                             </span>
                         </div>
                     </div>
