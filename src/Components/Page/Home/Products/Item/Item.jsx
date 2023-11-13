@@ -58,12 +58,13 @@ export default function Item() {
                                     <b>hfuehuf hefueh eijfie efuuhfeu</b>
                                     <p>Lorem ipsum dolor sit amet consectetur</p>
                                 </div>
-                                <button type="button" className="btn-close btnM" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" className="btn-close btnM" data-bs-dismiss="modal" ></button>
                             </div>
                             <div className="modal-body">
                                 <div className="product">
                                     <div className="product__img">
                                         <img src="" alt="" />
+                                        p
                                     </div>
                                     <div className="product__item">
                                         hh
