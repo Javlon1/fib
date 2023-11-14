@@ -198,7 +198,7 @@
         padding-top: 60px;
 
         &__content {
-            height: 85vh;
+            height: 90vh;
             justify-content: center;
             flex-direction: column;
 
@@ -241,6 +241,7 @@
 @media only screen and (max-width: 575px) {
     .myModel {
         &__content {
+            height: 90vh;
 
             &__right {
                 width: 370px;
