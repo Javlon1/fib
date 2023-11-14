@@ -40,6 +40,10 @@ export default function Item() {
 
     const totalProjects = projects.length
 
+    const scrollNone = () => {
+        document.body.style.overflow = "scroll"
+    }
+
     return (
         <section className='item'>
             <div className='container'>
@@ -51,7 +55,10 @@ export default function Item() {
                     <div className='myModel__content'>
                         <div className="myModel__content__left">
                             <img style={{ width: 250, height: 250 }} src={pizza} alt={pizza} />
-                            <button onClick={() => setOpenModel(false)}>
+                            <button onClick={() => {
+                                setOpenModel(false) 
+                                scrollNone()
+                            }}>
                                 <i className="bi bi-x-lg"></i>
                             </button>
                         </div>
