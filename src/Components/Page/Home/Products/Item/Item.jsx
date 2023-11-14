@@ -40,7 +40,7 @@ export default function Item() {
 
     const totalProjects = projects.length
 
-    const scrollNone = () => {
+    const scrollAct = () => {
         document.body.style.overflow = "scroll"
     }
 
@@ -57,7 +57,7 @@ export default function Item() {
                             <img style={{ width: 250, height: 250 }} src={pizza} alt={pizza} />
                             <button onClick={() => {
                                 setOpenModel(false) 
-                                scrollNone()
+                                scrollAct()
                             }}>
                                 <i className="bi bi-x-lg"></i>
                             </button>
