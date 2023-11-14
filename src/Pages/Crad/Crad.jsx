@@ -5,7 +5,12 @@ const Crad = () => {
     return (
         <section className='card'>
             <div className="container">
-                <h1>card</h1>
+                <h4 className='container__title'>Корзина</h4>
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
             </div>
         </section>
     )

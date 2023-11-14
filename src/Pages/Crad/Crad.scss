@@ -1,6 +1,20 @@
 @import "../../Assets/Sass/Veriables.scss";
 
-.card{
-    margin-top: 170px;
-    background-color: red;
+.card {
+    padding: 170px 0 2rem;
+    background-color: $white;
+    .container {
+        padding: 1rem 0;
+
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: $yellow;
+        }
+    }
 }
+@media only screen and (max-width: 991px) {
+    .card{
+        padding: 90px 0 2rem;
+    }
+} 

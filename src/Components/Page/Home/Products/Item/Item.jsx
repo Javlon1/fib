@@ -42,7 +42,6 @@ export default function Item() {
 
     const scrollAct = () => {
         document.body.style.overflow = "scroll"
-        console.log("ok");
     }
 
     return (
