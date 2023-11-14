@@ -15,7 +15,7 @@
     }
 }
 
-.myModel {
+.myModel { 
     display: none;
     padding-top: 150px;
     width: 100vw;
@@ -265,7 +265,7 @@
     .myModel {
         &__content {
             &__right {
-                width: 100%;
+                width: 320px;
 
                 &__size {
                     li {

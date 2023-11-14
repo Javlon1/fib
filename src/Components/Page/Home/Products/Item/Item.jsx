@@ -42,6 +42,7 @@ export default function Item() {
 
     const scrollAct = () => {
         document.body.style.overflow = "scroll"
+        console.log("ok");
     }
 
     return (
@@ -56,7 +57,7 @@ export default function Item() {
                         <div className="myModel__content__left">
                             <img style={{ width: 250, height: 250 }} src={pizza} alt={pizza} />
                             <button onClick={() => {
-                                setOpenModel(false) 
+                                setOpenModel(false)
                                 scrollAct()
                             }}>
                                 <i className="bi bi-x-lg"></i>
@@ -69,16 +70,19 @@ export default function Item() {
                                     <h6>25 см, традиционное тесто, 360 г</h6>
                                     <p>Моцарелла, соус альфредо</p>
                                 </span>
-                                <button onClick={() => setOpenModel(false)}>
+                                <button onClick={() => {
+                                    setOpenModel(false)
+                                    scrollAct()
+                                }}>
                                     <i className="bi bi-x-lg"></i>
                                 </button>
                             </div>
                             <ul className='myModel__content__right__size'>
                                 <li>
                                     <p>Маленькая</p>
-                                </li> 
+                                </li>
                                 <li>
-                                    <p>Маленькая</p> 
+                                    <p>Маленькая</p>
                                 </li>
                                 <li>
                                     <p>Маленькая</p>
