@@ -241,8 +241,11 @@
 @media only screen and (max-width: 575px) {
     .myModel {
         &__content {
-            height: 90vh;
-
+            height: 100vh;
+            &__left{
+                width: 280px;
+                height: 280px;
+            }
             &__right {
                 width: 370px;
 
@@ -260,7 +263,7 @@
 @media only screen and (max-width: 425px) {
     .myModel {
         &__content {
-            height: 90vh;
+            height: 100vh;
             &__right {
                 width: 100%;
 
