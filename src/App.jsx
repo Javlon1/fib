@@ -7,6 +7,7 @@ import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Home from './Pages/Home/Home';
 import Contact from './Pages/Contact/Contact';
+import Crad from './Pages/Crad/Crad';
 
 function App() {
 
@@ -72,6 +73,7 @@ function App() {
         <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/card' element={<Crad />} />
 
       </Routes>
 

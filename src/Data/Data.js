@@ -66,10 +66,10 @@ export const HeaderData = [
     },
     {
         id: 9,
-        link: '/',
-        nav_uz: 'Home',
-        nav_ru: 'домой',
-        nav_en: 'Home'
+        link: '/card',
+        nav_uz: 'card',
+        nav_ru: 'карзинка',
+        nav_en: 'card'
     },
     {
         id: 10,
