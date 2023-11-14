@@ -110,6 +110,7 @@ export default function Header() {
                             onClick={() => {
                                 setNav(!nav)
                                 setDrop(false)
+                                setDro(false)
                             }}></div>
                     </div>
                 </div>
