@@ -98,6 +98,46 @@ export default function Item() {
                                     <p>Острый халапенью</p>
                                     <b>от 150 $</b>
                                 </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
+                                <li>
+                                    <img src={pizza} alt="" />
+                                    <p>Острый халапенью</p>
+                                    <b>от 150 $</b>
+                                </li>
                             </ul>
                             <button className='myModel__content__right__btn'>Добавить в корзину 1 048 $</button>
                         </div>
