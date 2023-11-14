@@ -3,18 +3,89 @@
 .card {
     padding: 170px 0 2rem;
     background-color: $white;
-    .container {
-        padding: 1rem 0;
 
-        &__title {
-            font-size: 2.2rem;
-            font-weight: 800;
-            color: $yellow;
+    .container {
+        &__step {
+            padding: 1.5rem 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__title {
+                font-size: 2.2rem;
+                font-weight: 800;
+                color: $yellow;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    li {
+                        margin: 0 .5rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        b {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid $yellow;
+                            border-radius: 50%;
+                        }
+
+                        p {
+                            margin-top: .3rem;
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+
+                        &:nth-child(1) {
+                            b {
+                                background-color: $yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__list {
+            &__item {
+                border-top: 1px solid $gray;
+                height: 128px;
+            }
         }
     }
 }
+
 @media only screen and (max-width: 991px) {
-    .card{
+    .card {
         padding: 90px 0 2rem;
     }
-} 
+}
+
+@media only screen and (max-width: 575px) {
+
+    .card {
+        .container {
+            &__step {
+                display: flex;
+                flex-direction: column;
+                &__list{
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+    }
+
+}

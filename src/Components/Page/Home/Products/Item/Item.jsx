@@ -54,7 +54,7 @@ export default function Item() {
                 <div className={openModel ? "myModel modalAtc" : "myModel"}>
                     <div className='myModel__content'>
                         <div className="myModel__content__left">
-                            <img style={{ width: 250, height: 250 }} src={pizza} alt={pizza} />
+                            <img style={{ width: 200, height: 200 }} src={pizza} alt={pizza} />
                             <button onClick={() => {
                                 setOpenModel(false)
                                 scrollAct()
