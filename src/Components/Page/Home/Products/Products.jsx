@@ -10,11 +10,15 @@ export default function Products({ projects, loading }) {
     if (loading) {
         return <Loader />
     }
+    
+    const scrollNone = () => {
+        document.body.style.overflow = "hidden"
+    }
 
     return (
         <section className='products'>
             {
-                projects?.map((e,i) => (
+                projects?.map((e, i) => (
                     <div className='products__item' key={i}>
                         <img className='products__item__img' src={e.img} alt="" />
                         <div className='products__item__list'>
@@ -26,7 +30,12 @@ export default function Products({ projects, loading }) {
                             </p>
                             <span className='products__item__list__item'>
                                 <p>от {e.price} $</p>
-                                <button onClick={()=>setOpenModel(true)}>В корзину</button>
+                                <button onClick={() => {
+                                    setOpenModel(true)
+                                    scrollNone()
+                                }}>
+                                    В корзину
+                                </button>
                             </span>
                         </div>
                     </div>

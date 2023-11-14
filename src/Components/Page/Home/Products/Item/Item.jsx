@@ -69,9 +69,9 @@ export default function Item() {
                             <ul className='myModel__content__right__size'>
                                 <li>
                                     <p>Маленькая</p>
-                                </li>
+                                </li> 
                                 <li>
-                                    <p>Маленькая</p>
+                                    <p>Маленькая</p> 
                                 </li>
                                 <li>
                                     <p>Маленькая</p>

@@ -70,6 +70,10 @@ export default function Header() {
                         </div>
                         <div className={dro ? "dropdown open__menu" : "dropdown"}>
                             <ul className='list'>
+                                <div className='dropdown__dro'>
+                                    <b>карзинка</b>
+                                    <p onClick={() => setDro(false)}><i className="bi bi-x-lg"></i></p>
+                                </div>
                                 {
                                     <li className="list__item">
                                         <img className='list__item__img' src="" alt="" />
@@ -137,6 +141,10 @@ export default function Header() {
                     </div>
                     <div className={drop ? "dropdown open__menu" : "dropdown"}>
                         <ul className='list'>
+                            <div className='dropdown__title'>
+                                <b>карзинка</b>
+                                <p onClick={() => setDrop(false)}><i className="bi bi-x-lg"></i></p>
+                            </div>
                             {
                                 <li className="list__item">
                                     <img className='list__item__img' src="" alt="" />

@@ -190,6 +190,34 @@
             padding: 1rem 0;
             opacity: 0;
 
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: .5rem;
+
+                b {
+                    color: $black;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: .3rem;
+                    background-color: #f7d22d63;
+
+                    i {
+                        color: $black;
+                    }
+                }
+            }
+
             .list {
                 width: 90%;
                 height: 70%;
@@ -415,24 +443,26 @@
                         color: $black;
                         font-size: 1rem;
                         margin-bottom: 12px;
+
                         &:before {
                             bottom: .1rem;
                         }
-                        
+
                         &:hover,
                         &:focus,
                         &.active {
                             color: $yellow;
-                            
+
                             &:before {
                                 width: 90% !important;
                                 opacity: 1;
                                 background-color: $yellow;
                             }
                         }
-                        
+
                     }
-                    &:nth-child(1){
+
+                    &:nth-child(1) {
                         padding-top: 75px;
                     }
                 }
@@ -444,6 +474,36 @@
 
             .dropdown {
                 top: 90px;
+
+                &__dro {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: .5rem;
+                    position: relative;
+                    z-index: 9999999;
+
+                    b {
+                        color: $black;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        cursor: pointer;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: .3rem;
+                        background-color: #f7d22d63;
+
+                        i {
+                            color: $black;
+                        }
+                    }
+                }
             }
         }
     }
@@ -467,8 +527,9 @@
                     }
                 }
             }
-            &__nav{
-                &__btn{
+
+            &__nav {
+                &__btn {
                     display: flex;
                     transform: translateX(305%);
                     transition: $transition;
