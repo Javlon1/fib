@@ -1,0 +1,11 @@
+@import "../../Assets/Sass/Veriables.scss";
+
+.profilSection {
+    margin-top: 170px;
+}
+
+@media only screen and (max-width: 991px) {
+    .profilSection {
+        margin-top: 90px;
+    }
+}
