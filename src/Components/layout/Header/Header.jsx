@@ -64,7 +64,10 @@ export default function Header() {
 
                         <div className='container__top__info__profil'>
                             <span className='container__top__info__profil__item'>
-                                <Link className={profil ? "profil" : ""} to='/profil'>
+                                <Link className={profil ? "profil" : ""}
+                                    onClick={() => {
+                                        setNav(false)
+                                    }} to='/profil'>
                                     <i className="bi bi-person-circle"></i>
                                 </Link>
                                 <p className={logIn ? "profil" : ""}>Войти</p>
@@ -146,7 +149,10 @@ export default function Header() {
 
                     <div className={nav ? 'container__nav__profil btnAct' : 'container__nav__profil'}>
                         <span className='container__nav__profil__item'>
-                            <Link className={profil ? "profil" : ""} to='/profil'>
+                            <Link className={profil ? "profil" : ""}
+                                onClick={() => {
+                                    setNav(false)
+                                }} to='/profil'>
                                 <i className="bi bi-person-circle"></i>
                             </Link>
                             <p className={logIn ? "profil" : ""}>Войти</p>
