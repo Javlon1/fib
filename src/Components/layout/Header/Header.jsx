@@ -67,6 +67,8 @@ export default function Header() {
                                 <Link className={profil ? "profil" : ""}
                                     onClick={() => {
                                         setNav(false)
+                                        setDrop(false)
+                                        setDro(false)
                                     }} to='/profil'>
                                     <i className="bi bi-person-circle"></i>
                                 </Link>
@@ -152,6 +154,8 @@ export default function Header() {
                             <Link className={profil ? "profil" : ""}
                                 onClick={() => {
                                     setNav(false)
+                                    setDrop(false)
+                                    setDro(false)
                                 }} to='/profil'>
                                 <i className="bi bi-person-circle"></i>
                             </Link>
