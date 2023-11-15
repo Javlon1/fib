@@ -132,15 +132,22 @@ export default function Header() {
                             ))
                         }
                     </ul>
-                    <p>Войти</p>
-                    <div className={nav ? 'container__nav__btn btnAct' : 'container__nav__btn'}
-                        onClick={() => {
-                            setDrop(!drop)
-                            setNav(false)
-                        }}
-                    >
-                        <p>корзинка</p>
-                        <span>1</span>
+                    <div>
+                        <span>
+                            <Link to='/profil'>
+                                <i className="bi bi-person-circle"></i>
+                                </Link>
+                            <p>Войти</p>
+                        </span>
+                        <span className={nav ? 'container__nav__btn btnAct' : 'container__nav__btn'}
+                            onClick={() => {
+                                setDrop(!drop)
+                                setNav(false)
+                            }}
+                        >
+                            <p>корзинка</p>
+                            <span>1</span>
+                        </span>
                     </div>
                     <div className={drop ? "dropdown open__menu" : "dropdown"}>
                         <ul className='list'>
