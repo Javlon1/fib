@@ -12,6 +12,8 @@ export default function Header() {
     const [nav, setNav] = React.useState(false)
     const [drop, setDrop] = React.useState(false)
     const [dro, setDro] = React.useState(false)
+    const [profil, setProfil] = React.useState(true)
+    const [logIn, setLogIn] = React.useState(false)
     const offSet = 80;
 
     const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -59,14 +61,23 @@ export default function Header() {
                         >
                             905251243
                         </Link>
-                        <div className='container__top__info__btn'
-                            onClick={() => {
-                                setDro(!dro)
-                                setNav(false)
-                            }}
-                        >
-                            <p>корзинка</p>
-                            <span>1</span>
+
+                        <div className='container__top__info__profil'>
+                            <span className='container__top__info__profil__item'>
+                                <Link className={profil ? "profil" : ""} to='/profil'>
+                                    <i className="bi bi-person-circle"></i>
+                                </Link>
+                                <p className={logIn ? "profil" : ""}>Войти</p>
+                            </span>
+                            <span className={nav ? 'container__top__info__profil__btn' : 'container__top__info__profil__btn'}
+                                onClick={() => {
+                                    setDro(!dro)
+                                    setNav(false)
+                                }}
+                            >
+                                <p>корзинка</p>
+                                <span>1</span>
+                            </span>
                         </div>
                         <div className={dro ? "dropdown open__menu" : "dropdown"}>
                             <ul className='list'>
@@ -132,14 +143,15 @@ export default function Header() {
                             ))
                         }
                     </ul>
-                    <div>
-                        <span>
-                            <Link to='/profil'>
+
+                    <div className={nav ? 'container__nav__profil btnAct' : 'container__nav__profil'}>
+                        <span className='container__nav__profil__item'>
+                            <Link className={profil ? "profil" : ""} to='/profil'>
                                 <i className="bi bi-person-circle"></i>
-                                </Link>
-                            <p>Войти</p>
+                            </Link>
+                            <p className={logIn ? "profil" : ""}>Войти</p>
                         </span>
-                        <span className={nav ? 'container__nav__btn btnAct' : 'container__nav__btn'}
+                        <span className={nav ? 'container__nav__profil__btn' : 'container__nav__profil__btn'}
                             onClick={() => {
                                 setDrop(!drop)
                                 setNav(false)
@@ -149,6 +161,7 @@ export default function Header() {
                             <span>1</span>
                         </span>
                     </div>
+
                     <div className={drop ? "dropdown open__menu" : "dropdown"}>
                         <ul className='list'>
                             <div className='dropdown__title'>

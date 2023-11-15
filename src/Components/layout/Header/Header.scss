@@ -71,11 +71,16 @@
                 }
             }
 
+            
             &__info {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-
+                
+                &__profil {
+                    display: none;
+                }
+                
                 &__number {
                     font-size: 1.5rem;
                     color: $yellow;
@@ -146,31 +151,65 @@
 
             }
 
-            &__btn {
-                width: 160px;
-                height: 42px;
+            &__profil {
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                border-radius: .5rem;
-                background-color: $yellow;
-                cursor: pointer;
 
-                p {
-                    font-style: 1rem;
-                    font-weight: 600;
-                    padding: 0 .5rem;
+                &__item {
+                    display: flex;
+
+                    a {
+                        display: none;
+                        font-weight: 700;
+                        font-size: 1.5rem;
+                        color: #696F7A;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $black;
+                        }
+                    }
+
+                    p {
+                        display: none;
+                        font-weight: 700;
+                        font-size: 1.1rem;
+                        color: #696F7A;
+                        transition: $transition;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $black;
+                        }
+                    }
                 }
 
-                span {
-                    border-left: 2px solid $black;
-                    font-style: 1rem;
-                    font-weight: 600;
-                    padding: 0 .5rem;
-                }
+                &__btn {
+                    width: 160px;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: .5rem;
+                    background-color: $yellow;
+                    margin-left: 1rem;
+                    cursor: pointer;
 
+                    p {
+                        font-style: 1rem;
+                        font-weight: 600;
+                        padding: 0 .5rem;
+                    }
+
+                    span {
+                        border-left: 2px solid $black;
+                        font-style: 1rem;
+                        font-weight: 600;
+                        padding: 0 .5rem;
+                    }
+
+                }
             }
-
         }
 
         .dropdown {
@@ -349,6 +388,7 @@
 
         .container {
             &__top {
+
                 &__item {
                     .list {
                         display: none;
@@ -356,29 +396,66 @@
                 }
 
                 &__info {
-                    width: 350px;
+                    width: 430px;
 
-                    &__btn {
-                        width: 160px;
-                        height: 42px;
+                    &__profil {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
-                        border-radius: .5rem;
-                        background-color: $yellow;
-                        cursor: pointer;
 
-                        p {
-                            font-style: 1rem;
-                            font-weight: 600;
-                            padding: 0 .5rem;
+                        &__item {
+                            display: flex;
+                            margin-left: 1rem;
+
+                            a {
+                                display: none;
+                                font-weight: 700;
+                                font-size: 1.5rem;
+                                color: #696F7A;
+                                transition: $transition;
+
+                                &:hover {
+                                    color: $black;
+                                }
+                            }
+
+                            p {
+                                display: none;
+                                font-weight: 700;
+                                font-size: 1.1rem;
+                                color: #696F7A;
+                                transition: $transition;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: $black;
+                                }
+                            }
                         }
 
-                        span {
-                            border-left: 2px solid $black;
-                            font-style: 1rem;
-                            font-weight: 600;
-                            padding: 0 .5rem;
+                        &__btn {
+                            width: 160px;
+                            height: 42px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: .5rem;
+                            background-color: $yellow;
+                            margin-left: 1rem;
+                            cursor: pointer;
+
+                            p {
+                                font-style: 1rem;
+                                font-weight: 600;
+                                padding: 0 .5rem;
+                            }
+
+                            span {
+                                border-left: 2px solid $black;
+                                font-style: 1rem;
+                                font-weight: 600;
+                                padding: 0 .5rem;
+                            }
+
                         }
                     }
 
@@ -419,6 +496,10 @@
             }
 
             &__nav {
+                &__profil {
+                    display: none;
+                }
+
                 &__list {
                     width: 70%;
                     display: block;
@@ -517,6 +598,9 @@
 
                 &__info {
                     width: 40px;
+                    &__profil{
+                        display: none;
+                    }
 
                     &__number {
                         display: none;
@@ -529,7 +613,7 @@
             }
 
             &__nav {
-                &__btn {
+                &__profil {
                     display: flex;
                     transform: translateX(305%);
                     transition: $transition;
@@ -573,4 +657,8 @@
     .list {
         opacity: 1 !important;
     }
+}
+
+.profil{
+    display: block !important;
 }
