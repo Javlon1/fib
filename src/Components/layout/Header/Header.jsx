@@ -132,6 +132,7 @@ export default function Header() {
                             ))
                         }
                     </ul>
+                    <p>Войти</p>
                     <div className={nav ? 'container__nav__btn btnAct' : 'container__nav__btn'}
                         onClick={() => {
                             setDrop(!drop)
