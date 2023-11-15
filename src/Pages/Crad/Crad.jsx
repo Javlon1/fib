@@ -57,20 +57,16 @@ const Crad = () => {
                                 disableOnInteraction: false,
                             }}
                             breakpoints={{
-                                360: {
+                                420: {
                                     slidesPerView: 2,
                                     spaceBetween: 20
-                                },
-                                640: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 40
                                 },
                                 768: {
                                     slidesPerView: 3,
                                     spaceBetween: 10,
                                 },
-                                1000: {
-                                    slidesPerView: 3,
+                                1200: {
+                                    slidesPerView: 4,
                                     spaceBetween: 10,
                                 },
                             }}

@@ -37,7 +37,7 @@ export default function News() {
                                 slidesPerView: 3,
                                 spaceBetween: 10,
                             },
-                            1000: {
+                            1200: {
                                 slidesPerView: 4,
                                 spaceBetween: 10,
                             },
