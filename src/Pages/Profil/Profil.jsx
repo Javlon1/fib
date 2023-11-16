@@ -6,8 +6,21 @@ export default function Profil() {
     return (
         <section className='profilSection'>
             <div className='container'>
-                <h1>Profil</h1>
+                <h3>Profil</h3>
+                <div className="container__left">
+                    <form className='container__left__form' action="#">
+                        <div className="container__left__form__items">
+                            <h6>Full Name</h6>
+                            <span>
+                                <input type="text" defaultValue={'javlon'}/>
+                            </span>
+                        </div>
+                        <button className='container__left__form__btn' type='submit'>Save Changes</button>
+                    </form>
+                </div>
+                <div className="container__right">f</div>
             </div>
         </section>
     )
 }
+ 
