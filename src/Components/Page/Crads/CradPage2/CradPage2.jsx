@@ -27,6 +27,9 @@ export default function CradPage2() {
                     </span>
                 </div>
 
+                <div>
+                    
+                </div>
 
                 <div className="container__bottom">
                     <div className="container__bottom__left">
