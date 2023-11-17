@@ -14,8 +14,8 @@ export default function Item() {
     const [loading, setLoading] = React.useState(true)
 
 
-    // const urlLink = 'https://63c2c490b0c286fbe5f347e9.mockapi.io/users'
-    const urlLink = 'http://192.168.43.21:8000/food'
+    const urlLink = 'https://63c2c490b0c286fbe5f347e9.mockapi.io/users'
+    // const urlLink = 'http://192.168.43.21:8000/food'
 
     React.useEffect(() => {
         const getCounteries = async () => {
