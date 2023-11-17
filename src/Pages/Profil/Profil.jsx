@@ -1,5 +1,5 @@
 import * as React from 'react'
-import'./Profil.scss'
+import './Profil.scss'
 
 
 export default function Profil() {
@@ -12,7 +12,13 @@ export default function Profil() {
                         <div className="container__left__form__items">
                             <h6>Full Name</h6>
                             <span>
-                                <input type="text" defaultValue={'javlon'}/>
+                                <input type="text" defaultValue={'javlon mukhammadjonov'} />
+                            </span>
+                        </div>
+                        <div className="container__left__form__items">
+                            <h6>Number</h6>
+                            <span>
+                                <input type="text" defaultValue={'998905251243'} />
                             </span>
                         </div>
                         <button className='container__left__form__btn' type='submit'>Save Changes</button>
@@ -23,4 +29,3 @@ export default function Profil() {
         </section>
     )
 }
- 

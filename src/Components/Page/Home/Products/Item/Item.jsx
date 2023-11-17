@@ -13,14 +13,18 @@ export default function Item() {
     const [countriesPerPage] = React.useState(8)
     const [loading, setLoading] = React.useState(true)
 
+
+    // const urlLink = 'https://63c2c490b0c286fbe5f347e9.mockapi.io/users'
+    const urlLink = 'http://192.168.43.21:8000/food'
+
     React.useEffect(() => {
         const getCounteries = async () => {
-            await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+            await fetch(urlLink)
                 .then(resp => {
                     if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
                     return resp.json()
                 })
-                .then(data => setProjects(ProductData))
+                .then(data => setProjects(data))
                 .catch(error => console.error(error.message))
             setLoading(false)
         }

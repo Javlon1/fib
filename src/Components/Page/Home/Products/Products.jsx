@@ -5,12 +5,12 @@ import './Products.scss'
 
 
 export default function Products({ projects, loading }) {
-    const { setOpenModel } = React.useContext(Context)
+    const { lan, setOpenModel } = React.useContext(Context)
 
     if (loading) {
         return <Loader />
     }
-    
+
     const scrollNone = () => {
         document.body.style.overflow = "hidden"
     }
@@ -20,13 +20,13 @@ export default function Products({ projects, loading }) {
             {
                 projects?.map((e, i) => (
                     <div className='products__item' key={i}>
-                        <img className='products__item__img' src={e.img} alt="" />
+                        <img className='products__item__img' src={e.image} alt="" />
                         <div className='products__item__list'>
                             <b className='products__item__list__title'>
-                                {e.title}
+                                {e[`title_${lan}`]}
                             </b>
                             <p className='products__item__list__text'>
-                                {e.text}{e.id}
+                                {e[`text_${lan}`]}
                             </p>
                             <span className='products__item__list__item'>
                                 <p>от {e.price} $</p>
