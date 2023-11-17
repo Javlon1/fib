@@ -28,7 +28,7 @@ export default function CradPage2() {
                 </div>
 
                 <div>
-                    
+
                 </div>
 
                 <div className="container__bottom">
@@ -40,7 +40,7 @@ export default function CradPage2() {
                     </div>
                     <div className="container__bottom__right">
                         <Link to='/card2' className='container__bottom__right__a'>
-                            Оформить заказ
+                            Отправить заказ
                             <i className="bi bi-chevron-right"></i>
                         </Link>
                     </div>
