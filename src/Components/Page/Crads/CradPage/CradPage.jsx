@@ -1,7 +1,5 @@
-import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
-import { Context } from '../../Context/Context'
-import "./Crad.scss"
+import * as React from 'react'
+import './CradPage.scss'
 
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,10 +8,15 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { newsData } from '../../Data/Data';
-import img from "../../Assets/Img/pizza1.png"
+import { newsData } from '../../../../Data/Data';
+import img from "../../../../Assets/Img/pizza1.png"
+import { Context } from '../../../../Context/Context';
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
-const Crad = () => {
+
+
+export default function CradPage() {
 
     const { setMenu } = useContext(Context)
 
@@ -21,8 +24,14 @@ const Crad = () => {
         console.log("del");
     }
 
+    const getAddressHendler = (e) => {
+        e.preventDefault()
+        console.log("getAddressHendler");
+    }
+
     return (
-        <section className='card'>
+        <section className='cradPage'>
+
             <div className="container">
                 <div className='container__step'>
                     <h4 className='container__step__title'>Корзина</h4>
@@ -45,52 +54,28 @@ const Crad = () => {
                 </div>
                 <ul className='container__list'>
                     {
-                        <>
-                            <li className='container__list__item'>
-                                <img src={img} alt="img" />
-                                <div className="container__list__item__text">
-                                    <h5>С креветками и трюфелями</h5>
-                                    <p>Домашнаяя паста феттуччине, сливочный соус,  креветки, трюфельное масло, черный перец, пармезан.350 г</p>
-                                </div>
-                                <div className="container__list__item__price">
-                                    <ul>
-                                        <li>
-                                            <i className="bi bi-dash"></i>
-                                        </li>
-                                        <b>1</b>
-                                        <li>
-                                            <i className="bi bi-plus"></i>
-                                        </li>
-                                    </ul>
-                                    <p className="price">120 $</p>
-                                </div>
-                                <span onClick={deleteItem} className='container__list__item__x'>
-                                    <i className="bi bi-x-lg"></i>
-                                </span>
-                            </li>
-                            <li className='container__list__item'>
-                                <img src={img} alt="img" />
-                                <div className="container__list__item__text">
-                                    <h5>С креветками и трюфелями</h5>
-                                    <p>Домашнаяя паста феттуччине, сливочный соус,  креветки, трюфельное масло, черный перец, пармезан.350 г</p>
-                                </div>
-                                <div className="container__list__item__price">
-                                    <ul>
-                                        <li>
-                                            <i className="bi bi-dash"></i>
-                                        </li>
-                                        <b>1</b>
-                                        <li>
-                                            <i className="bi bi-plus"></i>
-                                        </li>
-                                    </ul>
-                                    <p className="price">120 $</p>
-                                </div>
-                                <span onClick={deleteItem} className='container__list__item__x'>
-                                    <i className="bi bi-x-lg"></i>
-                                </span>
-                            </li>
-                        </>
+                        <li className='container__list__item'>
+                            <img src={img} alt="img" />
+                            <div className="container__list__item__text">
+                                <h5>С креветками и трюфелями</h5>
+                                <p>Домашнаяя паста феттуччине, сливочный соус,  креветки, трюфельное масло, черный перец, пармезан.350 г</p>
+                            </div>
+                            <div className="container__list__item__price">
+                                <ul>
+                                    <li>
+                                        <i className="bi bi-dash"></i>
+                                    </li>
+                                    <b>1</b>
+                                    <li>
+                                        <i className="bi bi-plus"></i>
+                                    </li>
+                                </ul>
+                                <p className="price">120 $</p>
+                            </div>
+                            <span onClick={deleteItem} className='container__list__item__x'>
+                                <i className="bi bi-x-lg"></i>
+                            </span>
+                        </li>
                     }
                 </ul>
                 <div className='container__order'>
@@ -198,11 +183,7 @@ const Crad = () => {
                             <p>Сумма заказа:</p>
                             <b>1 048 $</b>
                         </span>
-                        <Link to='/'
-                            onClick={() => {
-                                setMenu(1)
-                                sessionStorage.setItem('menu', 1)
-                            }}>
+                        <Link to='/card2' className='container__bottom__right__a'>
                             Оформить заказ
                             <i className="bi bi-chevron-right"></i>
                         </Link>
@@ -212,5 +193,3 @@ const Crad = () => {
         </section>
     )
 }
-
-export default Crad

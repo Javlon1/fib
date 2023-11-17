@@ -7,8 +7,9 @@ import Loader from './Components/Ui/Loader/Loader';
 import NotFound from './Components/Ui/404/404.jsx';
 import Home from './Pages/Home/Home';
 import Contact from './Pages/Contact/Contact';
-import Crad from './Pages/Crad/Crad';
 import Profil from './Pages/Profil/Profil';
+import CradPage2 from './Components/Page/Crads/CradPage2/CradPage2';
+import CradPage from './Components/Page/Crads/CradPage/CradPage';
 
 function App() {
 
@@ -74,7 +75,8 @@ function App() {
         <Route path='*' element={<NotFound />} />
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/card' element={<Crad />} />
+        <Route path='/card' element={<CradPage />} />
+        <Route path='/card2' element={<CradPage2 />} />
         <Route path='/profil' element={<Profil />} />
 
       </Routes>

@@ -1,0 +1,163 @@
+@import "../../../../Assets/Sass/Veriables.scss";
+
+
+.cradPage2 {
+    padding: 170px 0 2rem;
+    background-color: $white;
+
+    .container {
+        &__step {
+            padding: 1.5rem 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__title {
+                font-size: 2.2rem;
+                font-weight: 800;
+                color: $yellow;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    li {
+                        margin: 0 .5rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        b {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid $yellow;
+                            border-radius: 50%;
+                        }
+
+                        p {
+                            margin-top: .3rem;
+                            font-size: 10px;
+                            font-weight: 600;
+                        }
+
+                        &:nth-child(1) {
+                            b {
+                                background-color: $yellow;
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            b {
+                                background-color: $yellow;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+
+            &__left {
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    letter-spacing: 1.5px;
+                    transition: .5s all ease;
+                    color: #696F7A;
+
+                    &:hover,
+                    &:focus,
+                    &.active {
+                        transition: .5s all ease;
+                        letter-spacing: .5px;
+                        color: $black;
+                    }
+                }
+            }
+
+            &__right {
+                text-align: end;
+
+                &__a {
+                    font-size: 1rem;
+                    font-weight: 800;
+                    padding: .7rem 1.3rem;
+                    border: transparent;
+                    border-radius: .5rem;
+                    background-color: $yellow;
+                    color: $black;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .cradPage2 {
+        padding: 90px 0 2rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .cradPage2 {
+        .container {
+            &__step {
+                display: flex;
+                flex-direction: column;
+                &__title {
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                }
+                &__list {
+                    margin-top: 1.7rem;
+                }
+            }
+
+            &__bottom {
+                display: block;
+
+                &__left {
+                    margin: 1.3rem 0;
+
+                    a {
+                        justify-content: center;
+                    }
+                }
+
+                &__right {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

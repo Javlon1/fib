@@ -1,6 +1,6 @@
-@import "../../Assets/Sass/Veriables.scss";
+@import "../../../../Assets/Sass/Veriables.scss";
 
-.card {
+.cradPage {
     padding: 170px 0 2rem;
     background-color: $white;
 
@@ -266,7 +266,7 @@
 
             &__left {
                 &__div {
-                    padding: 4rem 0;
+                    padding: 3rem 0;
                 }
 
                 a {
@@ -294,7 +294,7 @@
                 &__tatalPrice {
                     display: flex;
                     align-items: center;
-                    margin-bottom: 4rem;
+                    margin-bottom: 2rem;
 
                     p {
                         font-size: 1.5rem;
@@ -309,10 +309,11 @@
                     }
                 }
 
-                a {
+                &__a {
                     font-size: 1rem;
                     font-weight: 800;
                     padding: .7rem 1.3rem;
+                    border: transparent;
                     border-radius: .5rem;
                     background-color: $yellow;
                     color: $black;
@@ -325,18 +326,20 @@
             }
         }
     }
+
 }
 
 
 @media only screen and (max-width: 991px) {
-    .card {
+    .cradPage {
         padding: 90px 0 2rem;
     }
 }
 
+
 @media only screen and (max-width: 767px) {
 
-    .card {
+    .cradPage {
         .container {
             &__bottom {
                 display: block;
@@ -383,7 +386,7 @@
 }
 
 @media only screen and (max-width: 575px) {
-    .card {
+    .cradPage {
         .container {
             &__step {
                 display: flex;
