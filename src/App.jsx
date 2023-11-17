@@ -76,7 +76,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/card' element={<CradPage />} />
-        <Route path='/card2' element={<CradPage2 />} />
+        <Route path='/card-detail' element={<CradPage2 />} />
         <Route path='/profil' element={<Profil />} />
 
       </Routes>

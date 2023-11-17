@@ -24,14 +24,8 @@ export default function CradPage() {
         console.log("del");
     }
 
-    const getAddressHendler = (e) => {
-        e.preventDefault()
-        console.log("getAddressHendler");
-    }
-
     return (
         <section className='cradPage'>
-
             <div className="container">
                 <div className='container__step'>
                     <h4 className='container__step__title'>Корзина</h4>
@@ -183,7 +177,7 @@ export default function CradPage() {
                             <p>Сумма заказа:</p>
                             <b>1 048 $</b>
                         </span>
-                        <Link to='/card2' className='container__bottom__right__a'>
+                        <Link to='/card-detail' className='container__bottom__right__a'>
                             Оформить заказ
                             <i className="bi bi-chevron-right"></i>
                         </Link>
