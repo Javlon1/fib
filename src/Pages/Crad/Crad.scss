@@ -62,8 +62,94 @@
         &__list {
             &__item {
                 border-top: 1px solid $gray;
-                height: 128px;
-                background-color: red;
+                padding: 1.5rem .5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                position: relative;
+
+                img {
+                    width: 71px;
+                    height: 71px;
+                    border-radius: 50%;
+                    margin-left: 1rem;
+                }
+
+                &__text {
+                    margin-top: 1rem;
+                    margin-left: 1rem;
+
+                    h5 {
+                        font-size: 1.4rem;
+                        font-weight: 700;
+                        color: $black;
+                    }
+
+                    p {
+                        margin-top: .6rem;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        color: #686466;
+                    }
+                }
+
+                &__price {
+                    margin-top: 1rem;
+                    margin-right: 2rem;
+                    margin-left: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 200px;
+
+                    ul {
+                        width: 95px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 1rem;
+                        border-radius: .5rem;
+
+                        li {
+                            cursor: pointer;
+                        }
+
+                        background-color: #F3F3F7;
+                    }
+
+                    .price {
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                        color: $yellow;
+                    }
+                }
+
+                &__x {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1rem;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 1px solid $gray;
+                    color: $gray;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: $transition;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: 1px solid $yellow;
+                        color: $yellow;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid $gray;
+                }
             }
         }
 

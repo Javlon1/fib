@@ -11,9 +11,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { newsData } from '../../Data/Data';
+import img from "../../Assets/Img/pizza1.png"
 
 const Crad = () => {
+
     const { setMenu } = useContext(Context)
+
+    const deleteItem = () => {
+        console.log("del");
+    }
+
     return (
         <section className='card'>
             <div className="container">
@@ -37,12 +44,54 @@ const Crad = () => {
                     </span>
                 </div>
                 <ul className='container__list'>
-                    <li className='container__list__item'>
-
-                    </li>
-                    <li className='container__list__item'>
-
-                    </li>
+                    {
+                        <>
+                            <li className='container__list__item'>
+                                <img src={img} alt="img" />
+                                <div className="container__list__item__text">
+                                    <h5>С креветками и трюфелями</h5>
+                                    <p>Домашнаяя паста феттуччине, сливочный соус,  креветки, трюфельное масло, черный перец, пармезан.350 г</p>
+                                </div>
+                                <div className="container__list__item__price">
+                                    <ul>
+                                        <li>
+                                            <i className="bi bi-dash"></i>
+                                        </li>
+                                        <b>1</b>
+                                        <li>
+                                            <i className="bi bi-plus"></i>
+                                        </li>
+                                    </ul>
+                                    <p className="price">120 $</p>
+                                </div>
+                                <span onClick={deleteItem} className='container__list__item__x'>
+                                    <i className="bi bi-x-lg"></i>
+                                </span>
+                            </li>
+                            <li className='container__list__item'>
+                                <img src={img} alt="img" />
+                                <div className="container__list__item__text">
+                                    <h5>С креветками и трюфелями</h5>
+                                    <p>Домашнаяя паста феттуччине, сливочный соус,  креветки, трюфельное масло, черный перец, пармезан.350 г</p>
+                                </div>
+                                <div className="container__list__item__price">
+                                    <ul>
+                                        <li>
+                                            <i className="bi bi-dash"></i>
+                                        </li>
+                                        <b>1</b>
+                                        <li>
+                                            <i className="bi bi-plus"></i>
+                                        </li>
+                                    </ul>
+                                    <p className="price">120 $</p>
+                                </div>
+                                <span onClick={deleteItem} className='container__list__item__x'>
+                                    <i className="bi bi-x-lg"></i>
+                                </span>
+                            </li>
+                        </>
+                    }
                 </ul>
                 <div className='container__order'>
                     <h5 className='container__order__title'>Добавить к заказу?</h5>
