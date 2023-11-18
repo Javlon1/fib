@@ -28,7 +28,7 @@ export default function CradPage2() {
                 </div>
 
                 <div>
-
+                    <h3>Заказ на доставку</h3>
                 </div>
 
                 <div className="container__bottom">

@@ -23,15 +23,13 @@
             &__form {
                 text-align: end;
                 &__items {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
+                    text-align: start;
                     margin: 1rem 0;
 
-                    h6 {
+                    p {
                         color: $gray;
-                        font-weight: 600;
-                        font-size: 1.5rem;
+                        font-weight: 500;
+                        font-size: 1.1rem;
                     }
 
                     span {

@@ -10,13 +10,13 @@ export default function Profil() {
                 <div className="container__left">
                     <form className='container__left__form' action="#">
                         <div className="container__left__form__items">
-                            <h6>Full Name</h6>
+                            <p>Full Name</p>
                             <span>
                                 <input type="text" defaultValue={'javlon mukhammadjonov'} />
                             </span>
                         </div>
                         <div className="container__left__form__items">
-                            <h6>Number</h6>
+                            <p>Number</p>
                             <span>
                                 <input type="text" defaultValue={'998905251243'} />
                             </span>
