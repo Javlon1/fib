@@ -1,8 +1,17 @@
 import * as React from 'react'
 import './Profil.scss'
+import { DataGrid } from '@mui/x-data-grid';
+import { ProductData } from '../../Data/Data';
 
 
 export default function Profil() {
+
+    const columns = [
+        { field: 'id', headerName: 'ID'},
+        { field: 'title', headerName: 'Name'},
+        { field: 'price', headerName: 'Price'},
+    ];
+
     return (
         <section className='profilSection'>
             <div className='container'>
@@ -24,7 +33,19 @@ export default function Profil() {
                         <button className='container__left__form__btn' type='submit'>Save Changes</button>
                     </form>
                 </div>
-                <div className="container__right">f</div>
+                <div className="container__right">
+                    <DataGrid
+                        rows={ProductData}
+                        columns={columns}
+                        initialState={{
+                            pagination: {
+                                paginationModel: { page: 0, pageSize: 5 },
+                            },
+                        }}
+                        pageSizeOptions={[5, 10]}
+                        checkboxSelection
+                    />
+                </div>
             </div>
         </section>
     )
